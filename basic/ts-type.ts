@@ -29,3 +29,20 @@ const arr3: Array<number> = [123, 456]
 
 // 튜플(길이가 고정된 배열)의 타입
 const arr4: [number, number, string] = [1, 2, "3"]
+
+
+/**
+ * 아래 같은 코드는 js로 변환 시 사라진다.
+ */
+type Minus = () => number
+interface Plus {}
+// Array<string> // 여기서는 제네릭
+
+
+function fun(x: number, y: number): number // 함수 타입선언
+function fun(x: number, y: number) {
+    return x+y
+}
+
+let aa = 123
+aa = "hello" as unknown as number // as키워드를 쓰면 타입을 강제로 바꿔줌 - js 변환 시 사라짐
