@@ -43,10 +43,4 @@
     const e1: E = { hello : 'world', zero: 'cho'};
     const e2: E = { hello : 'world' }; // 또는 이기 때문에 가능
 
-
-
-
-
-
-
 })()
